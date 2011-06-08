@@ -1,0 +1,10 @@
+/* line 1, ../sass/admin/forum.sass */
+td {
+  padding: 3px;
+}
+
+/* line 3, ../sass/admin/forum.sass */
+td.actions {
+  white-space: nowrap;
+  min-width: 75px;
+}

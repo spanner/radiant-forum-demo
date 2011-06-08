@@ -1,0 +1,9 @@
+cache/*
+db/
+log/*
+tmp/**/*
+.DS_Store
+doc/api
+doc/app
+.sass-cache/*
+vendor/radiant

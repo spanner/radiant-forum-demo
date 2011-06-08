@@ -1,0 +1,18 @@
+[submodule "vendor/extensions/reader"]
+	path = vendor/extensions/reader
+	url = git://github.com/spanner/radiant-reader-extension.git
+[submodule "vendor/extensions/reader_group"]
+	path = vendor/extensions/reader_group
+	url = git://github.com/spanner/radiant-reader_group-extension.git
+[submodule "vendor/extensions/forum"]
+	path = vendor/extensions/forum
+	url = git://github.com/spanner/radiant-forum-extension.git
+[submodule "vendor/extensions/group_forum"]
+	path = vendor/extensions/group_forum
+	url = git://github.com/spanner/radiant-group_forum-extension.git
+[submodule "vendor/extensions/layouts"]
+	path = vendor/extensions/layouts
+	url = https://github.com/squaretalent/radiant-layouts-extension.git
+[submodule "vendor/extensions/mailer_layouts"]
+	path = vendor/extensions/mailer_layouts
+	url = git://github.com/spanner/radiant-mailer_layouts-extension.git

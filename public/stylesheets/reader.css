@@ -1,0 +1,162 @@
+/* line 20, sass/reader.sass */
+div.error, div.notice {
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  right: 50px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  color: white;
+  padding: 1px 1em;
+}
+/* line 29, sass/reader.sass */
+div.error a.closer, div.notice a.closer {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 36, sass/reader.sass */
+div.notice {
+  background-color: #b2e5b2;
+  color: #006600;
+}
+
+/* line 39, sass/reader.sass */
+div.error {
+  background-color: #f3c2c2;
+  color: #770000;
+}
+
+/* line 44, sass/reader.sass */
+div#readers .reader {
+  margin-bottom: 1em;
+}
+/* line 46, sass/reader.sass */
+div#readers h2 {
+  line-height: 1;
+  margin: 0;
+}
+
+/* line 50, sass/reader.sass */
+div.activation_required {
+  color: #d1005d;
+}
+
+/* line 53, sass/reader.sass */
+p.administrative {
+  font-family: helvetica, arial, sans-serif;
+  color: #afafaf;
+}
+
+/* line 57, sass/reader.sass */
+img.gravatar {
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  border: 3px solid white;
+}
+/* line 60, sass/reader.sass */
+img.gravatar.thumbnail {
+  margin: 2px 10px 10px 0;
+}
+/* line 62, sass/reader.sass */
+img.gravatar.big {
+  margin: 8px 10px 4px 0;
+}
+/* line 64, sass/reader.sass */
+img.gravatar.tiny {
+  margin: 0 6px 4px 0;
+  border: 1px solid white;
+}
+
+/* line 68, sass/reader.sass */
+form.friendly {
+  margin: 0 0 2em 0;
+}
+/* line 70, sass/reader.sass */
+form.friendly p {
+  margin: 1em 0 0 0;
+}
+/* line 72, sass/reader.sass */
+form.friendly input.login {
+  width: 95%;
+  font-size: 140%;
+}
+/* line 75, sass/reader.sass */
+form.friendly input.titular {
+  width: 95%;
+  font-size: 200%;
+}
+/* line 78, sass/reader.sass */
+form.friendly textarea, form.friendly select {
+  width: 95%;
+}
+/* line 80, sass/reader.sass */
+form.friendly textarea {
+  height: 400px;
+}
+/* line 82, sass/reader.sass */
+form.friendly input.standard {
+  width: 95%;
+}
+/* line 84, sass/reader.sass */
+form.friendly span.formnote {
+  color: #8c8d8e;
+}
+/* line 87, sass/reader.sass */
+form.friendly label.required {
+  font-weight: bold;
+}
+/* line 89, sass/reader.sass */
+form.friendly span.password {
+  display: block;
+  width: 95%;
+  padding: 5px;
+  font-size: 1.2;
+  line-height: 1.2;
+  color: #afafaf;
+  border: 1px solid #afafaf;
+}
+/* line 98, sass/reader.sass */
+form.friendly span.error-with-field input, form.friendly span.error-with-field select {
+  border: 1px solid red;
+  color: red;
+}
+/* line 101, sass/reader.sass */
+form.friendly span.error-with-field span.error {
+  line-height: 1.4;
+  background-color: #d1005d;
+  color: white;
+  padding: 3px 6px;
+  margin: -5px 0 0 6px;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -o-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+/* line 110, sass/reader.sass */
+form.friendly span.error-with-field span.error a.closer {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
