@@ -10,8 +10,7 @@
 
 (function($) { 
 
-  
-
+  $.ajaxSettings.accepts.html = $.ajaxSettings.accepts.script;
 
   function RemoteAction (url, holder) {
     var self = this;
@@ -26,7 +25,7 @@
         else if (self.form) self.show();
         else {
           self.wait();
-          $.get(self.url, self.step);  
+          $.get(self.url, self.step, 'html');  
         }
       },
       submit: function (e) {
@@ -38,7 +37,7 @@
         if (ajaxable) {
           e.preventDefault();
           self.form.find('textarea.toolbarred').read_editor();
-          $.post(self.form.attr('action'), self.form.serialize(), self.step);  
+          $.post(self.form.attr('action'), self.form.serialize(), self.step, 'html');  
         } else {
           return true;  // allow event through so that uploads are sent by normal HTTP POST
                         // toolbar is read in onSubmit
