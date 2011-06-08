@@ -1,5 +1,4 @@
 cache/*
-db/
 log/*
 tmp/**/*
 .DS_Store
