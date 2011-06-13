@@ -3,6 +3,7 @@
 @import gallery.sass
 
 div#forum
+  clear: both
   h2
     line-height: 1
     margin: 0
@@ -200,6 +201,9 @@ div.speaker
 p.add_comment, p.add_reply
   font-size: 200%
 
+span.formnote
+  +small
+  
 // emoticons in message display are interpolated by our redcloth extension as <img class="emoticon something" />
 
 img.emoticon

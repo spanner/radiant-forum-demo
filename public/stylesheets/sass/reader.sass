@@ -64,6 +64,11 @@ img.gravatar
   &.tiny
     margin: 0 6px 4px 0
     border: 1px solid white
+  &.left
+    float: left
+  &.right
+    float: right
+    margin: 8px 0 4px 10px
 
 form.friendly
   margin: 0 0 2em 0
@@ -82,10 +87,13 @@ form.friendly
   input.standard
     width: 95%
   span.formnote
+    +small
     color: $mid
   label
     &.required
       font-weight: bold
+  div.hidden
+    display: none
   span.password
     display: block
     width: 95%

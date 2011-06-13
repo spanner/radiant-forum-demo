@@ -81,46 +81,62 @@ img.gravatar.tiny {
   margin: 0 6px 4px 0;
   border: 1px solid white;
 }
+/* line 67, sass/reader.sass */
+img.gravatar.left {
+  float: left;
+}
+/* line 69, sass/reader.sass */
+img.gravatar.right {
+  float: right;
+  margin: 8px 0 4px 10px;
+}
 
-/* line 68, sass/reader.sass */
+/* line 73, sass/reader.sass */
 form.friendly {
   margin: 0 0 2em 0;
 }
-/* line 70, sass/reader.sass */
+/* line 75, sass/reader.sass */
 form.friendly p {
   margin: 1em 0 0 0;
 }
-/* line 72, sass/reader.sass */
+/* line 77, sass/reader.sass */
 form.friendly input.login {
   width: 95%;
   font-size: 140%;
 }
-/* line 75, sass/reader.sass */
+/* line 80, sass/reader.sass */
 form.friendly input.titular {
   width: 95%;
   font-size: 200%;
 }
-/* line 78, sass/reader.sass */
+/* line 83, sass/reader.sass */
 form.friendly textarea, form.friendly select {
   width: 95%;
 }
-/* line 80, sass/reader.sass */
+/* line 85, sass/reader.sass */
 form.friendly textarea {
   height: 400px;
 }
-/* line 82, sass/reader.sass */
+/* line 87, sass/reader.sass */
 form.friendly input.standard {
   width: 95%;
 }
-/* line 84, sass/reader.sass */
+/* line 89, sass/reader.sass */
 form.friendly span.formnote {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
   color: #8c8d8e;
 }
-/* line 87, sass/reader.sass */
+/* line 93, sass/reader.sass */
 form.friendly label.required {
   font-weight: bold;
 }
-/* line 89, sass/reader.sass */
+/* line 95, sass/reader.sass */
+form.friendly div.hidden {
+  display: none;
+}
+/* line 97, sass/reader.sass */
 form.friendly span.password {
   display: block;
   width: 95%;
@@ -130,12 +146,12 @@ form.friendly span.password {
   color: #afafaf;
   border: 1px solid #afafaf;
 }
-/* line 98, sass/reader.sass */
+/* line 106, sass/reader.sass */
 form.friendly span.error-with-field input, form.friendly span.error-with-field select {
   border: 1px solid red;
   color: red;
 }
-/* line 101, sass/reader.sass */
+/* line 109, sass/reader.sass */
 form.friendly span.error-with-field span.error {
   line-height: 1.4;
   background-color: #d1005d;
@@ -154,7 +170,7 @@ form.friendly span.error-with-field span.error {
   -o-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 110, sass/reader.sass */
+/* line 118, sass/reader.sass */
 form.friendly span.error-with-field span.error a.closer {
   margin-left: 10px;
   color: white;
