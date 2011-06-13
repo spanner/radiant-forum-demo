@@ -1,0 +1,216 @@
+@import compass/css3
+
+// this is a standard sass skeleton for styling the forum's interface elements. It also pulls in reader.sass and gallery.sass.
+
+@import forum.sass
+
+// useful things
+
+$rubinered: #d1005d
+$coolgrey0: #f2f0ed
+$coolgrey1: #e2e1dd
+$coolgrey2: #d6d6d4
+$coolgrey3: #cacac8
+$coolgrey4: #bdbdbd
+$coolgrey5: #b3b3b3
+$coolgrey6: #afafaf
+$coolgrey7: #9a9b9d
+$coolgrey8: #8c8d8e
+$coolgrey9: #747679
+$coolgrey10: #616265
+$coolgrey11: #4d4e53
+
+$dark: $coolgrey11
+$mid: $coolgrey8
+$pale: $coolgrey6
+$paler: $coolgrey4
+$verypale: $coolgrey2
+$faint: $coolgrey0
+
+$page: white
+$text: black
+$link: $mid
+$hover: $rubinered
+$warning: $rubinered
+
+@font-face
+  font-family: 'Prociono'
+  src: url('/fonts/prociono.eot')
+  src: url('/fonts/prociono.eot?iefix') format('eot'), url('/fonts/prociono.woff') format('woff'), url('/fonts/prociono.ttf') format('truetype'), url('/fonts/prociono.svg#webfontQ0TnnWLe') format('svg')
+
+@font-face
+  font-family: 'Junction'
+  src: url('/fonts/junction.eot')
+  src: url('/fonts/junction.eot?iefix') format('eot'), url('/fonts/junction.woff') format('woff'), url('/fonts/junction.ttf') format('truetype'), url('/fonts/junction.svg#webfontQ0TnnWLe') format('svg')
+
+=header
+  font-family: "Prociono", helvetica, arial, sans-serif
+  font-weight: normal
+  line-height: 1.2
+  
+=text
+  font-family: "Prociono", georgia, times, serif
+  font-weight: normal
+  line-height: 1.6
+
+=input
+  +text
+  color: $rubinered
+  padding: 5px
+  border: 1px solid $dark
+
+=small
+  font-size: 80%
+=blurred($color: $verypale)
+  text-shadow: #{$color} 0 0 2px
+=shadowed($color: #000000)
+  text-shadow: #{$color} 0 2px 5px
+=glow($color: white)
+  text-shadow: #{$color} 0 0 6px
+=bordered($width: 8px)
+  +box-shadow
+  border: #{$width} solid white
+
+// simple demo page layout
+
+div#container
+  margin: 0
+  overflow: hidden
+div#header
+  margin: 0
+  +linear-gradient(color-stops($coolgrey11, $coolgrey9))
+  overflow: hidden
+  div#masthead
+    width: 960px
+    margin: 0 auto
+    p#sitetitle
+      +header
+      font-size: 220%
+      color: white
+      margin: 20px 0 0 0
+      line-height: 1
+      a
+        color: white
+        &:hover
+          +glow
+    p#navigation
+      +header
+      font-size: 120%
+      color: white
+      margin: 0 0 12px 0
+      line-height: 1
+      a
+        margin-right: 0.5em
+        color: $coolgrey2
+        &:hover
+          color: white
+          +glow
+    div#search
+      float: right
+      width: 25%
+      margin: 0
+      form
+        margin: 2em 0 0 0
+        label
+          color: white
+          display: none
+        p.buttons
+          display: none
+        input.search
+          font-size: 12px
+          +border-radius(100px)
+          border: 1px solid $dark
+          background: white url('/images/admin/search.png') 6px center no-repeat
+          +box-shadow(rgba(black, 0.2), 0, 1px, 0, inset)
+          padding: 3px 9px 3px 24px
+    
+div#page
+  width: 960px
+  margin: 0 auto
+div#marginalia
+  float: right
+  width: 25%
+  ul
+    padding: 0
+    margin: 0
+    line-height: 1.2
+    
+div#main
+  width: 70%
+div#footer
+  clear: both
+  margin: 3em 0 0 0
+  +linear-gradient(color-stops($coolgrey2, $coolgrey1))
+  overflow: hidden
+div#colophon
+  width: 960px
+  margin: 1em auto
+  a
+    margin-right: 0.5em
+    color: $mid
+    &:hover
+      color: $hover
+
+// standard elements
+
+body
+  margin: 0
+  padding: 0
+  +text
+a, a:link
+  text-decoration: none
+  color: $link
+a:hover
+  color: $hover
+img
+  border: 0
+  margin: 0
+  padding: 0
+ul,ol
+  color: $dark
+ul
+  margin-top: 0
+  padding-left: 32px
+  list-style: square
+  &.minimal
+    list-style: none
+ol
+  padding-left: 16px
+blockquote
+  margin-left: 12px
+  color: $mid
+h1, h2, h3, h4
+  +header
+  line-height: 1
+  margin: 0.5em 0 0.25em 0
+label
+  +header
+h2.minimal
+  clear: both
+
+// local overrides of standard reader and forum css
+
+h1.title
+  font-size: 300%
+  span.breadhead
+    display: block
+    font-size: 40%
+    line-height: 0.6
+    
+form.friendly
+  input.titular, input.standard, textarea, select
+    +input
+
+img.smiley
+  margin: 3px 3px 0 3px
+
+ul.help
+  li
+    a
+      padding-left: 18px
+      background:
+        image: url(/images/furniture/help.png)
+        repeat: no-repeat
+        position: 0 2px
+      &:hover
+        background-image: url(/images/furniture/help_over.png)

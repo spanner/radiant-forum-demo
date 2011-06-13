@@ -22,6 +22,9 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "uuid"
+    t.integer  "original_width"
+    t.integer  "original_height"
+    t.string   "original_extension"
   end
 
   create_table "config", :force => true do |t|
@@ -40,21 +43,14 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
   create_table "forums", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.integer  "site_id"
-    t.integer  "topics_count",  :default => 0
-    t.integer  "posts_count",   :default => 0
     t.integer  "position"
     t.integer  "lock_version",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "created_by_id"
     t.integer  "updated_by_id"
-    t.integer  "reader_id"
     t.integer  "old_id"
-    t.integer  "group_id"
   end
-
-  add_index "forums", ["site_id"], :name => "index_forums_on_site_id"
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -180,21 +176,16 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
   create_table "posts", :force => true do |t|
     t.integer  "reader_id"
     t.integer  "topic_id"
-    t.integer  "forum_id"
-    t.integer  "site_id"
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "created_by_id"
-    t.integer  "updated_by_id"
     t.integer  "old_id"
     t.integer  "page_id"
-    t.integer  "group_id"
+    t.text     "search_text"
   end
 
-  add_index "posts", ["forum_id", "created_at"], :name => "index_posts_on_forum_id"
+  add_index "posts", ["created_at"], :name => "index_posts_on_forum_id"
   add_index "posts", ["reader_id", "created_at"], :name => "index_posts_on_reader_id"
-  add_index "posts", ["site_id"], :name => "index_posts_on_site_id"
 
   create_table "readers", :force => true do |t|
     t.integer  "site_id"
@@ -266,7 +257,6 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
 
   create_table "topics", :force => true do |t|
     t.integer  "forum_id"
-    t.integer  "site_id"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -276,13 +266,11 @@ ActiveRecord::Schema.define(:version => 20100810151922) do
     t.boolean  "locked",        :default => false
     t.integer  "replied_by_id"
     t.integer  "old_id"
-    t.integer  "group_id"
   end
 
   add_index "topics", ["forum_id", "replied_at"], :name => "index_topics_on_forum_id_and_replied_at"
   add_index "topics", ["forum_id", "sticky", "replied_at"], :name => "index_topics_on_sticky_and_replied_at"
   add_index "topics", ["forum_id"], :name => "index_topics_on_forum_id"
-  add_index "topics", ["site_id"], :name => "index_topics_on_site_id"
 
   create_table "users", :force => true do |t|
     t.string   "name",          :limit => 100
