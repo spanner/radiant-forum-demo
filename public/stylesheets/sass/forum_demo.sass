@@ -33,6 +33,9 @@ $link: $mid
 $hover: $rubinered
 $warning: $rubinered
 
+$inset: 60px 
+$bodywidth: 900px
+
 @font-face
   font-family: 'Prociono'
   src: url('/fonts/prociono.eot')
@@ -72,6 +75,12 @@ $warning: $rubinered
   +box-shadow
   border: #{$width} solid white
 
+=inset($by: $inset)
+  padding-left: $by
+=outset($by: $inset)
+  margin-left: -#{$by - 3px}
+
+
 // simple demo page layout
 
 div#container
@@ -82,7 +91,8 @@ div#header
   +linear-gradient(color-stops($coolgrey11, $coolgrey9))
   overflow: hidden
   div#masthead
-    width: 960px
+    width: $bodywidth
+    +inset
     margin: 0 auto
     p#sitetitle
       +header
@@ -94,6 +104,11 @@ div#header
         color: white
         &:hover
           +glow
+        span.logo
+          display: block
+          float: left
+          +outset
+          font-size: 150%
     p#navigation
       +header
       font-size: 120%
@@ -126,7 +141,8 @@ div#header
           padding: 3px 9px 3px 24px
     
 div#page
-  width: 960px
+  width: $bodywidth
+  +inset
   margin: 0 auto
 div#marginalia
   float: right
@@ -144,7 +160,8 @@ div#footer
   +linear-gradient(color-stops($coolgrey2, $coolgrey1))
   overflow: hidden
 div#colophon
-  width: 960px
+  width: $bodywidth
+  +inset
   margin: 1em auto
   a
     margin-right: 0.5em
@@ -191,6 +208,9 @@ h2.minimal
 
 // local overrides of standard reader and forum css
 
+div.speaker
+  +outset
+
 h1.title
   font-size: 300%
   span.breadhead
@@ -215,3 +235,19 @@ ul.help
         position: 0 2px
       &:hover
         background-image: url(/images/furniture/help_over.png)
+
+div#readers
+  div.reader
+    float: left
+    width: 30%
+    line-height: 1.2
+    margin-right: 2%
+    img
+      float: left
+      margin-right: 6px
+    h2
+      font-size: 125%
+    p.context
+      line-height: 1.2
+      margin: 5px 0 0 0
+      

@@ -502,7 +502,7 @@ div.gallery div.controls a.close {
 
 /* line 5, sass/forum.sass */
 div#forum {
-  clear: both;
+  clear: left;
 }
 /* line 7, sass/forum.sass */
 div#forum h2 {
