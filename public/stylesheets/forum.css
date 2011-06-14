@@ -1,4 +1,4 @@
-/* line 20, sass/reader.sass */
+/* line 21, sass/reader.sass */
 div.error, div.notice {
   position: absolute;
   width: 300px;
@@ -10,14 +10,14 @@ div.error, div.notice {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
   color: white;
   padding: 1px 1em;
 }
-/* line 29, sass/reader.sass */
+/* line 30, sass/reader.sass */
 div.error a.closer, div.notice a.closer {
   display: block;
   position: absolute;
@@ -27,116 +27,116 @@ div.error a.closer, div.notice a.closer {
   font-weight: bold;
 }
 
-/* line 36, sass/reader.sass */
+/* line 37, sass/reader.sass */
 div.notice {
   background-color: #b2e5b2;
   color: #006600;
 }
 
-/* line 39, sass/reader.sass */
+/* line 40, sass/reader.sass */
 div.error {
   background-color: #f3c2c2;
   color: #770000;
 }
 
-/* line 44, sass/reader.sass */
+/* line 45, sass/reader.sass */
 div#readers .reader {
   margin-bottom: 1em;
 }
-/* line 46, sass/reader.sass */
+/* line 47, sass/reader.sass */
 div#readers h2 {
   line-height: 1;
   margin: 0;
 }
 
-/* line 50, sass/reader.sass */
+/* line 51, sass/reader.sass */
 div.activation_required {
   color: #d1005d;
 }
 
-/* line 53, sass/reader.sass */
+/* line 54, sass/reader.sass */
 p.administrative {
   font-family: helvetica, arial, sans-serif;
   color: #afafaf;
 }
 
-/* line 57, sass/reader.sass */
+/* line 58, sass/reader.sass */
 img.gravatar {
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
   border: 3px solid white;
 }
-/* line 60, sass/reader.sass */
+/* line 61, sass/reader.sass */
 img.gravatar.thumbnail {
   margin: 2px 10px 10px 0;
 }
-/* line 62, sass/reader.sass */
+/* line 63, sass/reader.sass */
 img.gravatar.big {
   margin: 8px 10px 4px 0;
 }
-/* line 64, sass/reader.sass */
+/* line 65, sass/reader.sass */
 img.gravatar.tiny {
-  margin: 0 6px 4px 0;
+  margin: 3px 6px 4px 0;
   border: 1px solid white;
 }
-/* line 67, sass/reader.sass */
+/* line 68, sass/reader.sass */
 img.gravatar.left {
   float: left;
 }
-/* line 69, sass/reader.sass */
+/* line 70, sass/reader.sass */
 img.gravatar.right {
   float: right;
   margin: 8px 0 4px 10px;
 }
 
-/* line 73, sass/reader.sass */
+/* line 74, sass/reader.sass */
 form.friendly {
   margin: 0 0 2em 0;
 }
-/* line 75, sass/reader.sass */
+/* line 76, sass/reader.sass */
 form.friendly p {
   margin: 1em 0 0 0;
 }
-/* line 77, sass/reader.sass */
+/* line 78, sass/reader.sass */
 form.friendly input.login {
   width: 95%;
   font-size: 140%;
 }
-/* line 80, sass/reader.sass */
+/* line 81, sass/reader.sass */
 form.friendly input.titular {
   width: 95%;
   font-size: 200%;
 }
-/* line 83, sass/reader.sass */
+/* line 84, sass/reader.sass */
 form.friendly textarea, form.friendly select {
   width: 95%;
 }
-/* line 85, sass/reader.sass */
+/* line 86, sass/reader.sass */
 form.friendly textarea {
   height: 400px;
 }
-/* line 87, sass/reader.sass */
+/* line 88, sass/reader.sass */
 form.friendly input.standard {
   width: 95%;
 }
-/* line 89, sass/reader.sass */
+/* line 90, sass/reader.sass */
 form.friendly span.formnote {
   font-family: helvetica, arial, sans-serif;
   font-weight: normal;
   font-size: 80%;
   color: #8c8d8e;
 }
-/* line 93, sass/reader.sass */
+/* line 94, sass/reader.sass */
 form.friendly label.required {
   font-weight: bold;
 }
-/* line 95, sass/reader.sass */
-form.friendly div.hidden {
+/* line 96, sass/reader.sass */
+form.friendly div.hidden, form.friendly div.innocuous {
   display: none;
 }
-/* line 97, sass/reader.sass */
+/* line 98, sass/reader.sass */
 form.friendly span.password {
   display: block;
   width: 95%;
@@ -146,15 +146,18 @@ form.friendly span.password {
   color: #afafaf;
   border: 1px solid #afafaf;
 }
-/* line 106, sass/reader.sass */
+/* line 107, sass/reader.sass */
 form.friendly span.error-with-field input, form.friendly span.error-with-field select {
   border: 1px solid red;
   color: red;
 }
-/* line 109, sass/reader.sass */
+/* line 110, sass/reader.sass */
 form.friendly span.error-with-field span.error {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
   line-height: 1.4;
-  background-color: #d1005d;
+  background-color: red;
   color: white;
   padding: 3px 6px;
   margin: -5px 0 0 6px;
@@ -165,19 +168,19 @@ form.friendly span.error-with-field span.error {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
 }
-/* line 118, sass/reader.sass */
+/* line 120, sass/reader.sass */
 form.friendly span.error-with-field span.error a.closer {
   margin-left: 10px;
   color: white;
   text-decoration: none;
 }
 
-/* line 20, sass/reader.sass */
+/* line 21, sass/reader.sass */
 div.error, div.notice {
   position: absolute;
   width: 300px;
@@ -189,14 +192,14 @@ div.error, div.notice {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
   color: white;
   padding: 1px 1em;
 }
-/* line 29, sass/reader.sass */
+/* line 30, sass/reader.sass */
 div.error a.closer, div.notice a.closer {
   display: block;
   position: absolute;
@@ -206,116 +209,116 @@ div.error a.closer, div.notice a.closer {
   font-weight: bold;
 }
 
-/* line 36, sass/reader.sass */
+/* line 37, sass/reader.sass */
 div.notice {
   background-color: #b2e5b2;
   color: #006600;
 }
 
-/* line 39, sass/reader.sass */
+/* line 40, sass/reader.sass */
 div.error {
   background-color: #f3c2c2;
   color: #770000;
 }
 
-/* line 44, sass/reader.sass */
+/* line 45, sass/reader.sass */
 div#readers .reader {
   margin-bottom: 1em;
 }
-/* line 46, sass/reader.sass */
+/* line 47, sass/reader.sass */
 div#readers h2 {
   line-height: 1;
   margin: 0;
 }
 
-/* line 50, sass/reader.sass */
+/* line 51, sass/reader.sass */
 div.activation_required {
   color: #d1005d;
 }
 
-/* line 53, sass/reader.sass */
+/* line 54, sass/reader.sass */
 p.administrative {
   font-family: helvetica, arial, sans-serif;
   color: #afafaf;
 }
 
-/* line 57, sass/reader.sass */
+/* line 58, sass/reader.sass */
 img.gravatar {
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
   border: 3px solid white;
 }
-/* line 60, sass/reader.sass */
+/* line 61, sass/reader.sass */
 img.gravatar.thumbnail {
   margin: 2px 10px 10px 0;
 }
-/* line 62, sass/reader.sass */
+/* line 63, sass/reader.sass */
 img.gravatar.big {
   margin: 8px 10px 4px 0;
 }
-/* line 64, sass/reader.sass */
+/* line 65, sass/reader.sass */
 img.gravatar.tiny {
-  margin: 0 6px 4px 0;
+  margin: 3px 6px 4px 0;
   border: 1px solid white;
 }
-/* line 67, sass/reader.sass */
+/* line 68, sass/reader.sass */
 img.gravatar.left {
   float: left;
 }
-/* line 69, sass/reader.sass */
+/* line 70, sass/reader.sass */
 img.gravatar.right {
   float: right;
   margin: 8px 0 4px 10px;
 }
 
-/* line 73, sass/reader.sass */
+/* line 74, sass/reader.sass */
 form.friendly {
   margin: 0 0 2em 0;
 }
-/* line 75, sass/reader.sass */
+/* line 76, sass/reader.sass */
 form.friendly p {
   margin: 1em 0 0 0;
 }
-/* line 77, sass/reader.sass */
+/* line 78, sass/reader.sass */
 form.friendly input.login {
   width: 95%;
   font-size: 140%;
 }
-/* line 80, sass/reader.sass */
+/* line 81, sass/reader.sass */
 form.friendly input.titular {
   width: 95%;
   font-size: 200%;
 }
-/* line 83, sass/reader.sass */
+/* line 84, sass/reader.sass */
 form.friendly textarea, form.friendly select {
   width: 95%;
 }
-/* line 85, sass/reader.sass */
+/* line 86, sass/reader.sass */
 form.friendly textarea {
   height: 400px;
 }
-/* line 87, sass/reader.sass */
+/* line 88, sass/reader.sass */
 form.friendly input.standard {
   width: 95%;
 }
-/* line 89, sass/reader.sass */
+/* line 90, sass/reader.sass */
 form.friendly span.formnote {
   font-family: helvetica, arial, sans-serif;
   font-weight: normal;
   font-size: 80%;
   color: #8c8d8e;
 }
-/* line 93, sass/reader.sass */
+/* line 94, sass/reader.sass */
 form.friendly label.required {
   font-weight: bold;
 }
-/* line 95, sass/reader.sass */
-form.friendly div.hidden {
+/* line 96, sass/reader.sass */
+form.friendly div.hidden, form.friendly div.innocuous {
   display: none;
 }
-/* line 97, sass/reader.sass */
+/* line 98, sass/reader.sass */
 form.friendly span.password {
   display: block;
   width: 95%;
@@ -325,15 +328,18 @@ form.friendly span.password {
   color: #afafaf;
   border: 1px solid #afafaf;
 }
-/* line 106, sass/reader.sass */
+/* line 107, sass/reader.sass */
 form.friendly span.error-with-field input, form.friendly span.error-with-field select {
   border: 1px solid red;
   color: red;
 }
-/* line 109, sass/reader.sass */
+/* line 110, sass/reader.sass */
 form.friendly span.error-with-field span.error {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
   line-height: 1.4;
-  background-color: #d1005d;
+  background-color: red;
   color: white;
   padding: 3px 6px;
   margin: -5px 0 0 6px;
@@ -344,12 +350,12 @@ form.friendly span.error-with-field span.error {
   -ms-border-radius: 5px;
   -khtml-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
 }
-/* line 118, sass/reader.sass */
+/* line 120, sass/reader.sass */
 form.friendly span.error-with-field span.error a.closer {
   margin-left: 10px;
   color: white;
@@ -501,54 +507,160 @@ div.gallery div.controls a.close {
 }
 
 /* line 5, sass/forum.sass */
-div#forum {
-  clear: left;
+div.header {
+  margin: 2em 0 1em 0;
 }
 /* line 7, sass/forum.sass */
-div#forum h2 {
+div.header h1.title {
+  font-size: 275%;
+  line-height: 1;
+  margin: 0;
+}
+/* line 11, sass/forum.sass */
+div.header h1.title span.breadhead {
+  display: block;
+  font-size: 40%;
+  line-height: 0.6;
+}
+/* line 15, sass/forum.sass */
+div.header p.context {
+  margin: 0;
+}
+
+/* line 18, sass/forum.sass */
+div.forum {
+  clear: left;
+}
+/* line 20, sass/forum.sass */
+div.forum h2 {
   line-height: 1;
   margin: 0;
   font-size: 200%;
 }
-/* line 12, sass/forum.sass */
-div#forum div.forum div.forum_wrapper {
+/* line 25, sass/forum.sass */
+div.forum div.forum div.forum_wrapper {
   margin: 2em 0;
 }
-/* line 15, sass/forum.sass */
-div#forum div.forum div.forum_wrapper div.forum_description p {
+/* line 28, sass/forum.sass */
+div.forum div.forum div.forum_wrapper div.forum_description p {
   margin: 0;
 }
-/* line 17, sass/forum.sass */
-div#forum div.post {
+/* line 30, sass/forum.sass */
+div.forum div.post {
   clear: left;
+  margin: 1em 0 2em 0;
 }
-/* line 19, sass/forum.sass */
-div#forum div.post.waiting {
+/* line 33, sass/forum.sass */
+div.forum div.post.waiting {
   color: #8c8d8e;
 }
-/* line 21, sass/forum.sass */
-div#forum div.post.deleted {
+/* line 35, sass/forum.sass */
+div.forum div.post.deleted {
   text-decoration: line-through;
   color: #8c8d8e;
 }
-/* line 24, sass/forum.sass */
-div#forum div.post div.wrapper {
-  margin: 1em 0 2em 0;
-}
-/* line 28, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header h2.reply a {
+/* line 40, sass/forum.sass */
+div.forum div.post div.post_header h2.reply a {
   color: #8c8d8e;
 }
-/* line 30, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header h2.reply a:hover {
+/* line 42, sass/forum.sass */
+div.forum div.post div.post_header h2.reply a:hover {
   color: #d1005d;
 }
-/* line 33, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header a:hover {
+/* line 45, sass/forum.sass */
+div.forum div.post div.post_header a:hover {
   color: #d1005d;
 }
-/* line 35, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header a.edit_post, div#forum div.post div.wrapper div.post_header a.delete_post {
+/* line 47, sass/forum.sass */
+div.forum div.post div.post_body {
+  position: relative;
+}
+/* line 49, sass/forum.sass */
+div.forum div.post div.post_body p {
+  margin-top: 0.25em;
+}
+/* line 51, sass/forum.sass */
+div.forum div.post div.post_body blockquote {
+  color: #8c8d8e;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: #cacac8;
+  margin: 0;
+  padding-left: 20px;
+}
+/* line 58, sass/forum.sass */
+div.forum div.post div.post_attachments {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
+}
+/* line 60, sass/forum.sass */
+div.forum div.post p.voices {
+  margin: 0;
+}
+/* line 62, sass/forum.sass */
+div.forum div.post p.replies {
+  clear: left;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
+  margin-top: 0;
+  color: #bdbdbd;
+}
+/* line 67, sass/forum.sass */
+div.forum div.post p.replies a {
+  color: #afafaf;
+}
+/* line 70, sass/forum.sass */
+div.forum div.post div.remote_form {
+  margin: 0;
+}
+/* line 73, sass/forum.sass */
+div.forum div.post div.post_removal p {
+  margin: 0;
+}
+/* line 75, sass/forum.sass */
+div.forum div.post div.post_removal p.warning {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-weight: bold;
+  color: red;
+  font-size: 1.4;
+}
+/* line 79, sass/forum.sass */
+div.forum div.post div.post_removal p.confirmation {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-weight: bold;
+  color: green;
+  font-size: 1.4;
+}
+/* line 84, sass/forum.sass */
+div.forum p.context {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 1.2;
+  margin: 5px 0 10px 0;
+}
+/* line 89, sass/forum.sass */
+div.forum div#search {
+  overflow: hidden;
+  margin: 0 0 2em 0;
+}
+/* line 92, sass/forum.sass */
+div.forum div#search p {
+  width: 24%;
+  margin-right: 1%;
+  float: left;
+}
+/* line 96, sass/forum.sass */
+div.forum div#search p.buttons {
+  padding-top: 1.5em;
+}
+
+/* line 99, sass/forum.sass */
+a.edit_post, a.delete_post {
   color: white;
   padding: 1px 3px;
   -moz-border-radius: 3px;
@@ -560,116 +672,31 @@ div#forum div.post div.wrapper div.post_header a.edit_post, div#forum div.post d
   font-size: 75%;
   opacity: 0.2;
 }
-/* line 41, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header a.edit_post:hover, div#forum div.post div.wrapper div.post_header a.delete_post:hover {
+/* line 105, sass/forum.sass */
+a.edit_post:hover, a.delete_post:hover {
   opacity: 1;
-  color: white;
-}
-/* line 44, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header a.edit_post {
-  background-color: green;
-}
-/* line 46, sass/forum.sass */
-div#forum div.post div.wrapper div.post_header a.delete_post {
-  background-color: red;
-}
-/* line 48, sass/forum.sass */
-div#forum div.post div.wrapper div.post_body {
-  position: relative;
-}
-/* line 50, sass/forum.sass */
-div#forum div.post div.wrapper div.post_body p {
-  margin-top: 0.25em;
-}
-/* line 52, sass/forum.sass */
-div#forum div.post div.wrapper div.post_body blockquote {
-  color: #8c8d8e;
-  border-left-width: 5px;
-  border-left-style: solid;
-  border-left-color: #cacac8;
-  margin: 0;
-  padding-left: 20px;
-}
-/* line 59, sass/forum.sass */
-div#forum div.post div.wrapper div.post_attachments {
-  font-family: helvetica, arial, sans-serif;
-  font-weight: normal;
-  font-size: 80%;
-}
-/* line 61, sass/forum.sass */
-div#forum div.post div.wrapper p.voices {
-  margin: 0;
-}
-/* line 63, sass/forum.sass */
-div#forum div.post div.wrapper p.replies {
-  clear: left;
-  font-family: helvetica, arial, sans-serif;
-  font-weight: normal;
-  font-size: 80%;
-  margin-top: 0;
-  color: #bdbdbd;
-}
-/* line 68, sass/forum.sass */
-div#forum div.post div.wrapper p.replies a {
-  color: #afafaf;
-}
-/* line 71, sass/forum.sass */
-div#forum div.post div.remote_form {
-  margin: 0;
-}
-/* line 73, sass/forum.sass */
-div#forum div.post div.remote_form p {
-  margin: 0;
-}
-/* line 76, sass/forum.sass */
-div#forum div.post div.post_removal p {
-  margin: 0;
-}
-/* line 78, sass/forum.sass */
-div#forum div.post div.post_removal p.warning {
-  font-family: helvetica, arial, sans-serif;
-  font-weight: normal;
-  font-weight: bold;
-  color: red;
-  font-size: 1.4;
-}
-/* line 82, sass/forum.sass */
-div#forum div.post div.post_removal p.confirmation {
-  font-family: helvetica, arial, sans-serif;
-  font-weight: normal;
-  font-weight: bold;
-  color: green;
-  font-size: 1.4;
-}
-/* line 87, sass/forum.sass */
-div#forum p.context {
-  font-family: helvetica, arial, sans-serif;
-  font-weight: normal;
-  font-size: 80%;
-  line-height: 1.2;
-  margin: 5px 0 10px 0;
-}
-/* line 92, sass/forum.sass */
-div#forum div#search {
-  overflow: hidden;
-  margin: 0 0 2em 0;
-}
-/* line 95, sass/forum.sass */
-div#forum div#search p {
-  width: 24%;
-  margin-right: 1%;
-  float: left;
-}
-/* line 99, sass/forum.sass */
-div#forum div#search p.buttons {
-  padding-top: 1.5em;
+  color: white !important;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
 }
 
-/* line 102, sass/forum.sass */
+/* line 109, sass/forum.sass */
+a.edit_post {
+  background-color: green;
+}
+
+/* line 111, sass/forum.sass */
+a.delete_post {
+  background-color: red;
+}
+
+/* line 114, sass/forum.sass */
 div.upload_stack, div.post_attachments {
   margin: 0 0 30px 0;
 }
-/* line 104, sass/forum.sass */
+/* line 116, sass/forum.sass */
 div.upload_stack h4, div.post_attachments h4 {
   font-family: helvetica, arial, sans-serif;
   font-weight: normal;
@@ -677,95 +704,95 @@ div.upload_stack h4, div.post_attachments h4 {
   margin: 0;
   color: #8c8d8e;
 }
-/* line 108, sass/forum.sass */
+/* line 120, sass/forum.sass */
 div.upload_stack ul, div.post_attachments ul {
   margin: 0;
   list-style: none;
   padding: 0;
 }
-/* line 112, sass/forum.sass */
+/* line 124, sass/forum.sass */
 div.upload_stack li, div.post_attachments li {
   clear: none;
   margin: 0;
 }
-/* line 115, sass/forum.sass */
+/* line 127, sass/forum.sass */
 div.upload_stack a.attachment, div.post_attachments a.attachment {
   background: url(/images/furniture/attachment_link.png) no-repeat 0 2px;
   padding-left: 18px;
 }
-/* line 118, sass/forum.sass */
+/* line 130, sass/forum.sass */
 div.upload_stack a.attachment:hover, div.post_attachments a.attachment:hover {
   background-image: url(/images/furniture/attachment_over.png);
 }
-/* line 120, sass/forum.sass */
+/* line 132, sass/forum.sass */
 div.upload_stack a.remove, div.post_attachments a.remove {
   font-family: helvetica, arial, sans-serif;
   font-size: 60%;
   color: #d1005d;
   padding: 3px;
 }
-/* line 125, sass/forum.sass */
+/* line 137, sass/forum.sass */
 div.upload_stack a.remove:hover, div.post_attachments a.remove:hover {
   color: white;
   background-color: #d1005d;
 }
-/* line 128, sass/forum.sass */
+/* line 140, sass/forum.sass */
 div.upload_stack a.thumbnail, div.post_attachments a.thumbnail {
   margin: 8px 8px 4px 0;
 }
-/* line 130, sass/forum.sass */
+/* line 142, sass/forum.sass */
 div.upload_stack a.thumbnail img, div.post_attachments a.thumbnail img {
   border: 4px solid white;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -o-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: #4d4e53 2px 2px 4px;
+  -webkit-box-shadow: #4d4e53 2px 2px 4px;
+  -o-box-shadow: #4d4e53 2px 2px 4px;
+  box-shadow: #4d4e53 2px 2px 4px;
 }
 
-/* line 135, sass/forum.sass */
+/* line 147, sass/forum.sass */
 div.upload_stack ul.attachments input, div.upload_stack ul.uploads input {
   display: none;
 }
-/* line 137, sass/forum.sass */
+/* line 149, sass/forum.sass */
 div.upload_stack ul li a {
   color: #4d4e53;
 }
-/* line 139, sass/forum.sass */
+/* line 151, sass/forum.sass */
 div.upload_stack div.selector {
   position: relative;
 }
-/* line 141, sass/forum.sass */
+/* line 153, sass/forum.sass */
 div.upload_stack div.selector input.filefield {
   position: relative;
   z-index: 100;
   opacity: 0;
   cursor: pointer;
 }
-/* line 146, sass/forum.sass */
+/* line 158, sass/forum.sass */
 div.upload_stack div.selector div.addfile {
   position: absolute;
   z-index: 99;
   top: 0;
 }
-/* line 150, sass/forum.sass */
+/* line 162, sass/forum.sass */
 div.upload_stack div.selector div.addfile a {
   background: url(/images/furniture/attachment_link.png) no-repeat 0 2px;
   padding-left: 18px;
 }
 
-/* line 154, sass/forum.sass */
+/* line 166, sass/forum.sass */
 div#forum_search {
   margin: 40px 0 0 0;
 }
-/* line 156, sass/forum.sass */
+/* line 168, sass/forum.sass */
 div#forum_search h2, div#forum_search p {
   margin: 0;
 }
-/* line 159, sass/forum.sass */
+/* line 171, sass/forum.sass */
 div#forum_search input.standard {
   width: 80%;
 }
-/* line 161, sass/forum.sass */
+/* line 173, sass/forum.sass */
 div#forum_search input.button {
   font-size: 1.2em;
   line-height: 1;
@@ -774,12 +801,12 @@ div#forum_search input.button {
   margin: 0 0 0 6px;
 }
 
-/* line 168, sass/forum.sass */
+/* line 180, sass/forum.sass */
 img.feedicon {
   margin: 8px 0;
 }
 
-/* line 171, sass/forum.sass */
+/* line 183, sass/forum.sass */
 a.rssfeed {
   display: inline;
   margin: 0;
@@ -787,7 +814,7 @@ a.rssfeed {
   width: 14px;
 }
 
-/* line 177, sass/forum.sass */
+/* line 189, sass/forum.sass */
 .context, .updatenote {
   font-family: helvetica, arial, sans-serif;
   font-weight: normal;
@@ -796,19 +823,19 @@ a.rssfeed {
   color: #afafaf;
 }
 
-/* line 182, sass/forum.sass */
+/* line 194, sass/forum.sass */
 p.waiting, span.waiting, a.waiting {
   color: #8c8d8e;
   padding-left: 18px;
   background: transparent url(/images/furniture/wait_16_grey.gif) no-repeat left top;
 }
 
-/* line 187, sass/forum.sass */
+/* line 199, sass/forum.sass */
 img.smiley {
   margin: 3px 3px 0 3px;
 }
 
-/* line 190, sass/forum.sass */
+/* line 202, sass/forum.sass */
 div.speaker {
   position: relative;
   clear: left;
@@ -816,22 +843,22 @@ div.speaker {
   width: 50px;
   height: 50px;
   margin-right: 8px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
-/* line 199, sass/forum.sass */
+/* line 211, sass/forum.sass */
 p.add_comment, p.add_reply {
   font-size: 200%;
 }
 
-/* line 202, sass/forum.sass */
+/* line 214, sass/forum.sass */
 span.formnote {
   font-family: helvetica, arial, sans-serif;
   font-weight: normal;
   font-size: 80%;
 }
 
-/* line 207, sass/forum.sass */
+/* line 219, sass/forum.sass */
 img.emoticon {
   overflow: hidden;
   width: 16px;
@@ -841,56 +868,56 @@ img.emoticon {
   border: 0;
   background: transparent url("/images/furniture/emoticons.png") no-repeat 0 0;
 }
-/* line 215, sass/forum.sass */
+/* line 227, sass/forum.sass */
 img.emoticon.happy {
   background-position: 0 0;
 }
-/* line 217, sass/forum.sass */
+/* line 229, sass/forum.sass */
 img.emoticon.neutral {
   background-position: -16px 0;
 }
-/* line 219, sass/forum.sass */
+/* line 231, sass/forum.sass */
 img.emoticon.sad {
   background-position: -32px 0;
 }
-/* line 221, sass/forum.sass */
+/* line 233, sass/forum.sass */
 img.emoticon.grin {
   background-position: -48px 0;
 }
-/* line 223, sass/forum.sass */
+/* line 235, sass/forum.sass */
 img.emoticon.surprised {
   background-position: -64px 0;
 }
-/* line 225, sass/forum.sass */
+/* line 237, sass/forum.sass */
 img.emoticon.wink {
   background-position: -80px 0;
 }
-/* line 227, sass/forum.sass */
+/* line 239, sass/forum.sass */
 img.emoticon.devil {
   background-position: -96px 0;
 }
-/* line 229, sass/forum.sass */
+/* line 241, sass/forum.sass */
 img.emoticon.tongue {
   background-position: -112px 0;
 }
-/* line 231, sass/forum.sass */
+/* line 243, sass/forum.sass */
 img.emoticon.lol {
   background-position: -128px 0;
 }
-/* line 233, sass/forum.sass */
+/* line 245, sass/forum.sass */
 img.emoticon.mad {
   background-position: -144px 0;
 }
-/* line 235, sass/forum.sass */
+/* line 247, sass/forum.sass */
 img.emoticon.shocked {
   background-position: -160px 0;
 }
-/* line 237, sass/forum.sass */
+/* line 249, sass/forum.sass */
 img.emoticon.cool {
   background-position: -176px 0;
 }
 
-/* line 240, sass/forum.sass */
+/* line 252, sass/forum.sass */
 .punymce_emoticons {
   z-index: 2000;
 }
