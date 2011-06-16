@@ -140,7 +140,12 @@ div#header
           background: white url('/images/admin/search.png') 6px center no-repeat
           +box-shadow(rgba(black, 0.2), 0, 1px, 0, inset)
           padding: 3px 9px 3px 24px
-    
+      &.waiting
+        form
+          input.search
+            color: $coolgrey3
+            background-image: white url('/images/admin/spinner.gif')
+
 div#page
   width: $bodywidth
   +inset
